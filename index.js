@@ -371,7 +371,7 @@ startAtlas();
 
 app.use("/", express.static(join(__dirname, "Frontend")));
 
-app.get("/qr", async (req, res) => {
+app.get("/wa/qr", async (req, res) => {
   const { session } = req.query;
   if (!session)
     return void res
